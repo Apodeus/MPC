@@ -22,3 +22,7 @@ BFLAGS=-d --report=all
 
 imp : imp.yacc.o imp.lex.o
 	gcc -o $@ $^
+
+
+clean : 
+	rm *.o imp
